@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT"
+issueTrackerURL="https://github.com/Sparkinex/lpautopromote/issues"
+[[mods]]
+    modId="lpautopromote"
+    version="${file.jarVersion}"
+    displayName="On Time Commands"
+    authors="Sparkinex"
+    description='''
+    On Time Commands is a server side plugin that will run a command when a player reaches a certain playtime.
+    '''
+[[dependencies.lpautopromote]]
+    modId="forge"
+    mandatory=true
+    versionRange="[43,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.lpautopromote]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,1.20)"
+    ordering="NONE"
+    side="BOTH"
