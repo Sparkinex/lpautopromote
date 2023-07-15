@@ -4,8 +4,6 @@ import com.sparkinex.lpautopromote.core.PlayerData;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerPlayer;
 
-import java.util.List;
-
 public interface IAutoRank {
     void tick(ServerPlayer player, PlayerData playerData);
 
