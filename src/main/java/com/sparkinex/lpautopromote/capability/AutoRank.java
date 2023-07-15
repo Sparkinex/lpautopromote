@@ -30,6 +30,7 @@ public class AutoRank implements IAutoRank {
     }
 
     private boolean isPlayerAFK(ServerPlayer player, PlayerData playerData) {
+        if (player == null) return true;
         final int MS_BUFFER_FROM_LAST_ACTION = 150;
         final float MOVE_SENSE = 0.05f;
         final float LOOK_SENSE = 0.01f;

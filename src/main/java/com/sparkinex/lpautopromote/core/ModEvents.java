@@ -33,6 +33,7 @@ public class ModEvents {
         }
 
         PlayerData pData = LPAutoPromote.getOrCreatePlayerData(player);
+        if (pData == null) return;
 
         LazyOptional<IAutoRank> realPlayTimeCap = player.getCapability(CapabilityAutoRankProvider.REAL_PLAY_TIME_CAPABILITY);
 

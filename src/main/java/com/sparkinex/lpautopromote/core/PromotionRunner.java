@@ -31,6 +31,7 @@ public class PromotionRunner {
                 for (UUID uuid : LPAutoPromote.playerDataMap.keySet()) {
                     LPAutoPromote.playerDataMap.get(uuid);
                     ServerPlayer player = event.getServer().getPlayerList().getPlayer(uuid);
+                    if (player == null) return;
                     IAutoRank realPlayTimeCapability = player.getCapability(CapabilityAutoRankProvider.REAL_PLAY_TIME_CAPABILITY).orElseThrow(IllegalStateException::new);
 
                     int playtimeSeconds = realPlayTimeCapability.getRealPlayTime() / 20;
